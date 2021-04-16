@@ -38,6 +38,8 @@ const promptUser = () => {
           name: "number",
         },
       ])
+
+      // .then and push
       .then((answers) => {
         const manager = new Manager(
           answers.name,
@@ -51,6 +53,7 @@ const promptUser = () => {
       });
   }
 
+  // create team function
   function createTeam() {
     inquirer
       .prompt([
@@ -65,6 +68,8 @@ const promptUser = () => {
           ],
         },
       ])
+
+      // .then for choices
       .then((userChoice) => {
         switch (userChoice.memberChoice) {
           case "Engineer":
@@ -181,6 +186,8 @@ const promptUser = () => {
       });
   }
 };
+
+// constant to generate HTML
 const generateHTML = (answers) =>
   `<!DOCTYPE html>
 <html lang="en">
