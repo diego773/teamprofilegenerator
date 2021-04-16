@@ -1,5 +1,6 @@
-const Employee = require("./lib/employee");
+const Employee = require("./lib/Employee");
 
+// describe the class and it what should pass
 describe("Employee class", () => {
   it("should create a html", () => {
     const text = "html";
